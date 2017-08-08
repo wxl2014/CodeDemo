@@ -100,7 +100,7 @@ public class MainActivityPresenter implements MainActivityContract.Presenter
 			@Override
 			public void onErrorResponse(VolleyError volleyError)
 			{
-
+                KLog.e(volleyError.toString());
 			}
 		});
 		mDownQueue.add(request);
